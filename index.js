@@ -136,4 +136,30 @@ function joinArr(arr1, arr2) {
  }
  console.log(joinArr([1, 2, 3], [1, 2, 3, 4, 5, 6]));                
 
- 
+ //9. Crea una función que tome un objecto como parámetro remueve la propiedad coutnry y su valor
+
+const myObj1 = { 
+    
+    city: 'Sacramento', 
+    state: 'California',
+    country: 'USA',
+    continent: 'North America' 
+
+};
+
+const myObj2 = { 
+    
+    city: 'Madrid', 
+    state: 'Madrid',
+    country: 'Spain',
+    continent: 'Europe' 
+
+};
+
+function deleteKey(object){
+
+    delete object.country;
+    console.log(object);
+}
+deleteKey(myObj2);
+deleteKey(myObj1);
