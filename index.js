@@ -63,3 +63,8 @@ function orderedNumbers(array) {
     return array.sort((a,b) => {b - a});
 }
 console.log(orderedNumbers([56, 0, 12, 4, 32]));
+
+//6. Dado un array de strings, muestra por consola un array con orden alfabetico
+
+const letters = ['b', 'c', 'd', 'a'];
+console.log(letters.sort());
