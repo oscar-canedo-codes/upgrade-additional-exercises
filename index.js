@@ -167,3 +167,19 @@ deleteKey(myObj1);
 //10. Mostrar el valor de key = city;
 
 console.log(myObj1.city);
+
+//11. Reemplaza strings vacios por null
+
+const lettersObj = { a: "", b:  "b", c: " ", d: "d" };
+
+function replaceKey(obj) {
+
+    for (const key in obj) { 
+
+        if (obj[key] === "" ||  obj[key] === " "){
+            obj[key] = null;
+        }
+    }
+    console.log(obj);
+}
+replaceKey(lettersObj);
