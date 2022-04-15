@@ -163,3 +163,7 @@ function deleteKey(object){
 }
 deleteKey(myObj2);
 deleteKey(myObj1);
+
+//10. Mostrar el valor de key = city;
+
+console.log(myObj1.city);
