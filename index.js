@@ -68,3 +68,50 @@ console.log(orderedNumbers([56, 0, 12, 4, 32]));
 
 const letters = ['b', 'c', 'd', 'a'];
 console.log(letters.sort());
+
+//7. Crea una función que tome como parámetro un array de strings y muestra el string más largo 
+
+function longestStr(arr) {
+   
+    let longestWord = '';
+
+    arr.forEach((word) => {
+
+        if (word.length > longestWord.length) {
+            longestWord = word;
+        }
+    });
+
+    return longestWord; 
+}
+    
+console.log(longestStr(['help', 'me', 'Oriana']));
+
+//7. Solución usando metódo .for
+
+ function longestString(arr){
+
+/*      
+    let lgth = 0;
+    let longestWord;
+
+        for (let i = 0; i < arr.length; i++) {
+
+            if (arr[i].length > lgth) {
+                lgth = arr[i].length;
+                longestWord = arr[i];
+            }
+        };
+        return longestWord; */
+
+    //7. Solución usando metódo .sort  
+    
+    arr.sort ((a,b) => { b.length - a.length}); 
+
+    }
+
+console.log(longestStr(['help', 'me', 'oriana']));
+
+                
+
+ 
