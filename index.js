@@ -19,3 +19,26 @@ function wordsTogether(a,b) {
     }
 }
 console.log(wordsTogether("cheese", "cake"));
+
+
+//3. Crea una función que tome como parámetro un número y lo divida en dígitos individuales dentro de un array. Tip: puedes usar el método split(); 
+
+function toArray(num) {
+
+        const newArray = String(num).split(''); 
+        console.log(newArray);
+        const arr = [];
+        
+        newArray.forEach((item) => {
+        arr.push(Number(item));
+        });
+        console.log(arr); 
+    };
+    toArray(1234);
+        
+//3. Solución usando metódo .from
+
+const str = '1234';
+
+const res = Array.from(str, Number);
+console.log(res);
