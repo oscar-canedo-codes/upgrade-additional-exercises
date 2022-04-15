@@ -183,3 +183,55 @@ function replaceKey(obj) {
     console.log(obj);
 }
 replaceKey(lettersObj);
+
+//12. Crea una función que tome como parameteros un array de objectos y un string. Agrega a cada uno de los objetos la propiedad “continent” que tome como valor el parámetro de string. Muestra por consola el nuevo array.
+
+
+function addKey(arr, newValue) {
+
+    const newKey = 'continent';
+
+    for (let i = 0; i <arr.length; i++) {
+        arr[i][newKey] = newValue;
+    };
+    console.log(arr);
+}
+
+addKey(
+    [
+        {city: 'Stockholm', country: 'Sweden' },
+        {city: 'Paris', country: 'France' },
+    ],
+ "Europe",
+);
+
+// Objectos Advanzados
+
+const character = {
+
+    name: {
+        realName: 'Darth Vader',
+        aka: 'Anakin Skywalker',
+    },
+    planet: 'Tatooine',
+    power: 90,
+    children: ['Luke', 'Leia'],
+    phrase: function () {
+        console.log(this.name.realName);
+    },
+};
+
+console.log(character.name);
+character.phrase();
+
+// Destructuring
+
+let { name, children } = character;
+
+console.log(name.realName, name.aka);
+console.log(children[0], children[1]);
+
+let { realName, aka } = character.name;
+
+console.log(realName);
+console.log(aka);
