@@ -112,6 +112,28 @@ console.log(longestStr(['help', 'me', 'Oriana']));
 
 console.log(longestStr(['help', 'me', 'oriana']));
 
-                
+//8.  Crea una función que tome 2 arrays como param, une ambos arrays, remueve valores duplicados y ordena los numeros de formas ascendente
+
+function joinArr(arr1, arr2) {
+    
+    // Metódo .concat
+    
+    const newArr = arr1.concat(arr2);
+    console.log(newArr); 
+
+    // Metódo Spread Operator 
+    
+    const newArray =[...arr1, ...arr2];
+    console.log(newArray);
+
+    /* .filter() -> Crear un nuevo array con todos los elementos de un array base que cumplan con una condición */
+
+    return newArray.sort().filter(function(item, index, array) {
+        
+        return !index || item != array[index - 1];
+    });
+
+ }
+ console.log(joinArr([1, 2, 3], [1, 2, 3, 4, 5, 6]));                
 
  
