@@ -57,3 +57,9 @@ function areEqual(array) {
 
 console.log(areEqual([true, true, true]));
 
+//5. Dado un array de números, muestra por consola un array con orden descendente
+
+function orderedNumbers(array) {
+    return array.sort((a,b) => {b - a});
+}
+console.log(orderedNumbers([56, 0, 12, 4, 32]));
