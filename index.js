@@ -42,3 +42,18 @@ const str = '1234';
 
 const res = Array.from(str, Number);
 console.log(res);
+
+//4. Crea una función que tome como parámetro un array. Si todos los elementos son iguales mostramos True, si no False
+
+function areEqual(array) {
+
+    for(let i = 1; i < array.length; i++) 
+        if(array[0] === array[i]) {
+        return true;
+    }   else {
+        return false;
+    }
+}
+
+console.log(areEqual([true, true, true]));
+
