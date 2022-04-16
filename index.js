@@ -235,3 +235,18 @@ let { realName, aka } = character.name;
 
 console.log(realName);
 console.log(aka);
+
+// 13. Dado el HTML, crea una función que, a través de la manipulación del DOM, cambie el color de fondo de los párrafos, cada uno con colores diferentes.
+
+function changeColors() {
+
+    const paragraph1 = document.querySelector('.p1'),
+    paragraph2 = document.querySelector('.p2');
+
+    paragraph1.style.backgroundColor = 'blue';
+    paragraph2.style.backgroundColor = 'red';
+
+}
+
+const myButton = document.querySelector('.btn');
+myButton.addEventListener('click', changeColors);
