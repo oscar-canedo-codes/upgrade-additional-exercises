@@ -250,3 +250,21 @@ function changeColors() {
 
 const myButton = document.querySelector('.btn');
 myButton.addEventListener('click', changeColors);
+
+// 14. Dado el siguiente array de objetos, manipula el DOM para imprimir en el HTML como un h1 los valores de cada una de las propiedades del objeto.Tip: debes hacer uso de appendChild(). 
+
+const dogList = document.querySelector('.dogs-list');
+
+const dogs = [
+    { name: "balto", type: "chihuaha" },
+    { name: "loli", type: "poodle" },
+];
+
+for (let i = 0; i < dogs.length ; i++) {
+
+    const dog = dogs[i];
+
+    const dogData = document.createElement('h1');
+    dogData.innerText = `${dog.name} es un ${dog.type}`;
+    dogList.appendChild(dogData);
+}

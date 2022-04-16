@@ -3,4 +3,14 @@ body {
     justify-content: center;
     margin:auto;
     padding: 3rem;
-};
+}
+
+.main {
+    background-color: yellowgreen;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.block{
+    background-color: lavenderblush;
+}
